@@ -1,3 +1,8 @@
+This repo is implementation of IRBGHR-PIXOR model presented in the  [Enhancing Indoor Robot Pedestrian Detection Using Improved PIXOR Backbone and Gaussian Heatmap Regression in 3D LiDAR Point Clouds](https://ieeexplore.ieee.org/abstract/document/10385189)
+
+![alt text](docs/modelpipeline.jpeg)
+
+# Launch
 Make should you have installed the JRDB at https://jrdb.erc.monash.edu/ and pasted to data folder with the following structure:
 ```
 ├── data
@@ -17,7 +22,6 @@ Make should you have installed the JRDB at https://jrdb.erc.monash.edu/ and past
 │           └── upper_velodyne
 └── src
 ```
-
 Then clone this repo and https://github.com/KoaBou/JRDB_publishers.git to src folder and run
 ```
 colcon build 
@@ -36,3 +40,7 @@ Finally, launch the package with
 ```
 ros2 launch pedestrian_detection coffe_detection.launch.py
 ```
+
+# Results
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/QfDBbdK9qXw/0.jpg)](https://www.youtube.com/watch?v=QfDBbdK9qXw)
